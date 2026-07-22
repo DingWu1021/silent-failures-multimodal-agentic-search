@@ -13,9 +13,9 @@
 
 > Thank you for submitting your paper to the SIGIR 2026 SynthIR Workshop.
 
-![Diagnostic pipeline](assets/pipeline.png)
+![Taxonomy of silent failures in multimodal agentic search](assets/main_figure.png)
 
-Overview of the diagnostic pipeline: each multimodal search trajectory is logged, judged with a structured silent-failure rubric, cross-validated by a second judge, and aggregated into accuracy/TCR and category-level failure reports.
+Main figure from the paper: a six-category taxonomy of silent failures in multimodal agentic search.
 
 ---
 
@@ -93,7 +93,7 @@ Each `(task, model)` pair produces one structured trajectory. The primary judge 
 | Gemini 2.5 Pro | 0.8 | 33.8 | 1.5 | 13.5 | 38.3 | 4.5 |
 | GPT-4o | 7.4 | 27.4 | 0.0 | 9.1 | 37.1 | 0.6 |
 
-![Failure distribution](assets/failure_distribution.png)
+![Failure distribution](assets/fig2.png)
 
 Silent-failure rates per category on the committed subset. A single trajectory can contribute to multiple categories.
 
@@ -119,8 +119,9 @@ Originally correct trajectories fail under blank-image substitution, indicating 
 |:--|:--|
 | Paper | [arXiv placeholder](https://arxiv.org/abs/XXXX.XXXXX) |
 | Dataset | [Hugging Face placeholder](https://huggingface.co/datasets/USERNAME/DATASET_NAME) |
+| Main figure | [assets/main_figure.png](assets/main_figure.png) |
+| Result figure | [assets/fig2.png](assets/fig2.png) |
 | Pipeline figure | [assets/pipeline.png](assets/pipeline.png) |
-| Failure distribution | [assets/failure_distribution.png](assets/failure_distribution.png) |
 | Blank-image stress test | [assets/modality_shortcut.png](assets/modality_shortcut.png) |
 | Oral video | [YouTube](https://www.youtube.com/watch?v=rsu2zykZ3Lk) |
 
