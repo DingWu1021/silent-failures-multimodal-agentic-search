@@ -97,12 +97,6 @@ Each `(task, model)` pair produces one structured trajectory. The primary judge 
 
 Silent-failure rates per category on the committed subset. A single trajectory can contribute to multiple categories.
 
-### Blank-Image Stress Test
-
-![Blank-image stress test](assets/modality_shortcut.png)
-
-Originally correct trajectories fail under blank-image substitution, indicating that successful trajectories in this sample depend on visual information.
-
 ### Key Findings
 
 - **TCR is lower than surface accuracy** across all three evaluated models.
@@ -122,7 +116,6 @@ Originally correct trajectories fail under blank-image substitution, indicating 
 | Main figure | [assets/main_figure.png](assets/main_figure.png) |
 | Result figure | [assets/fig2.png](assets/fig2.png) |
 | Pipeline figure | [assets/pipeline.png](assets/pipeline.png) |
-| Blank-image stress test | [assets/modality_shortcut.png](assets/modality_shortcut.png) |
 | Oral video | [YouTube](https://www.youtube.com/watch?v=rsu2zykZ3Lk) |
 
 ---
