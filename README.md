@@ -4,13 +4,10 @@
 [![Paper](https://img.shields.io/badge/arXiv-2607.19793-b31b1b.svg)](https://arxiv.org/abs/2607.19793)
 [![Video](https://img.shields.io/badge/Video-YouTube-red.svg)](https://www.youtube.com/watch?v=rsu2zykZ3Lk)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB.svg?logo=python&logoColor=white)](https://www.python.org/)
-[![License](https://img.shields.io/badge/License-TBD-lightgrey.svg)](LICENSE)
 
 *A diagnostic framework for detecting when multimodal search agents look correct but are not faithfully grounded in the image, retrieved evidence, or trajectory.*
 
 ### Accepted as an Oral Presentation at SIGIR 2026 SynthIR Workshop
-
-> Thank you for submitting your paper to the SIGIR 2026 SynthIR Workshop.
 
 ![Taxonomy of silent failures in multimodal agentic search](assets/main_figure.png)
 
@@ -30,8 +27,6 @@ Main figure from the paper: a six-category taxonomy of silent failures in multim
 - [Installation](#installation)
 - [Data Preparation](#data-preparation)
 - [Running the Pipeline](#running-the-pipeline)
-- [Notes](#notes)
-- [License](#license)
 
 ---
 
@@ -41,7 +36,7 @@ Multimodal agentic search systems are commonly evaluated by final-answer accurac
 
 This project studies those **silent failures** in multimodal agentic search. We run three frontier multimodal models under the same ReAct-style search scaffold, record full trajectories, label each trajectory with a structured LLM-judge rubric, and compare answer accuracy with **true correctness rate (TCR)**.
 
-The release includes the diagnostic code. Dataset files, trajectories, labels, and result artifacts are not included in this repository.
+This repository contains the diagnostic code. Dataset files, trajectories, labels, and result artifacts are not included.
 
 ---
 
@@ -181,7 +176,7 @@ data/
 results/
 ```
 
-The released scripts expect the same directory layout used in the paper experiments. Large derived artifacts, including trajectories, judge labels, blank-image stress-test outputs, ablation artifacts, and final result tables, are not bundled with the GitHub repository.
+The scripts expect the same directory layout used in the paper experiments. Large derived artifacts, including trajectories, judge labels, blank-image stress-test outputs, ablation artifacts, and final result tables, are not bundled in this repository.
 
 ---
 
@@ -212,18 +207,3 @@ python code/analysis/compute_metrics.py
 python code/analysis/analyze_shortcut.py
 python code/analysis/v1_vs_v2.py
 ```
-
----
-
-## Notes
-
-- Do not commit a filled `.env` file.
-- The `.env.example` file uses placeholders only.
-- Large trajectories, annotations, images, and result artifacts are intentionally excluded from this code release.
-- Before public release, confirm the redistribution terms for MMSearch-Plus-derived images and tasks.
-
----
-
-## License
-
-License is currently TBD. Confirm the redistribution terms for any external datasets before releasing derived data artifacts.
